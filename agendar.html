@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Barbearia Agendamento</title>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="cabecalho__caixa">
+                <h1><img class="cabecalho__logo" src="./assets/logo.png" alt="barbearia alura"></h1>
+                <nav class="cabecalho__navegacao">
+                    <ul class="cabecalho__navegacao__lista">
+                        <li><a class="cabecalho__navegacao__lista__opcoes" href="index.html" >Home</a></li>
+                        <li><a class="cabecalho__navegacao__lista__opcoes" href="servicos.html">Serviços</a></li>
+                        <li><a class="cabecalho__navegacao__lista__opcoes" href="agendar.html">Agendar</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form class="formulario">
+                <div class="formulario__container">
+                    <label class= "formulario__legenda" for="nome">Nome</label>
+                    <input class="formulario__input" type="text" id="nome" required>
+
+                    <label class= "formulario__legenda" for="email">Email</label>
+                    <input class="formulario__input" type="email" id="email" placeholder="seuemail@dominio.com" required>
+
+                    <label class= "formulario__legenda" for="contato">Celular</label>
+                    <input class="formulario__input" type="tel" id="contato" placeholder="(xx) xxxxx-xxxx" required>
+
+                    <label class= "formulario__legenda" for="mensagem">Mensagem</label>
+                    <textarea class="formulario__input" id="mensagem" cols="60" rows="8" required></textarea>
+
+                    <fieldset>
+                        <legend class= "formulario__legenda">Preferência de contato?</legend>
+
+                        <label class="legenda-radio" for="email-radio"><input type="radio" id="email-radio" name="contato" value="email">Email</label>
+                        <label class="legenda-radio" for="celular-radio"><input type="radio" id="celular-radio" name="contato" value="celular">Celular</label>
+                        <label class="legenda-radio" for="whatsapp-radio"><input type="radio" id="whatsapp-radio" name="contato" value="whatsapp">Whatsapp</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class= "formulario__legenda">Qual horário prefere ser atendido?</legend>
+
+                        <select class="formulario__opcao">
+                            <option value="manha">Manhã</option>
+                            <option value="tarde">Tarde</option>
+                            <option value="noite">Noite</option>
+                        </select>
+                    </fieldset>
+
+                    <label class= "formulario__legenda"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+                    <input class="formulario__enviar" type="submit" value="AGENDAR">
+                </div>
+            </form>
+
+            <div class="container__tabela">
+                <table class="tabela">
+                    <thead class="tabela__cabecalho">
+                        <tr>
+                            <th class="tabela__colunas">Dia</th>
+                            <th class="tabela__colunas">Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tabela__colunas">Segunda</td>
+                            <td class="tabela__colunas">8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td class="tabela__colunas">Quarta</td>
+                            <td class="tabela__colunas">8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td class="tabela__colunas">Sexta</td>
+                            <td class="tabela__colunas">8h ~ 20h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer class="rodape">
+            <img src="./assets/barbearia-branco.png" alt="barbearia2">
+            <p class="rodape__copyright">&copy; Copyright Barbearia Alura - 2019</p>
+        </footer>
+    </body>
+</html>

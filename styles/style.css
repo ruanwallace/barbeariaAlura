@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Montserrat:wght@500&family=Raleway&display=swap');
+
+:root {
+    --fonte-primaria: 'Raleway', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-terciaria: 'Calistoga', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: black;
+    line-height: 1;
+    font-family: var(--fonte-primaria);
+}
+
+.cabecalho {
+    background-color: #000000;
+}
+
+.cabecalho__caixa {
+    width: 960px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.cabecalho__logo {
+    width: 110px;
+    transform: translate(0, 2.8px);
+}
+
+.cabecalho__navegacao {
+    position: absolute;
+    top: 24.5px;
+    right: 0;
+}
+
+.cabecalho__navegacao__lista li {
+    display: inline-block;
+    margin: 0 0 0 70px;
+}
+
+.cabecalho__navegacao__lista__opcoes {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte-secundaria);
+}
+
+.cabecalho__navegacao__lista__opcoes:hover {
+    text-decoration: underline;
+    color: rgb(177, 177, 62);
+}
+
+.boasvindas {
+    position: relative;
+    padding: 50px 0;
+}
+
+.boasvindas__bg {
+    background-image: url("../assets/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.boasvindas__caixa {
+    position: relative;
+    z-index: 2;
+    width: 680px;
+    margin: 0 auto;
+}
+
+.boasvindas__texto {
+    color: #000000;
+    font-size: 64px;
+    display: inline-block;
+    position: absolute;
+    top: 43.8px;
+    font-family: var(--fonte-terciaria);
+}
+
+.principal {
+    padding: 3em 0;
+    background-color: #ece9e9;
+}
+
+.principal__caixa {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.principal__textos {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.titulo {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 1em;
+    font-family: var(--fonte-secundaria);
+}
+
+.principal__texto {
+    font-size: 18px;
+    margin: 1em 0 0;
+}
+
+.principal__utensilios {
+    width: 39%;
+    float: right;
+    border-radius: 12px;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#ece9e9, #afaeae);
+}
+
+.mapa__texto {
+    text-align: center;
+    margin: 0 0 2em;
+    font-size: 18px;
+}
+
+.mapa__local {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.beneficios {
+    padding: 3em 0 6em;
+    background-color: #afaeae;
+}
+
+.beneficios__caixa {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.beneficios__lista {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    list-style-type: none;
+    width: 40%;
+}
+
+.beneficios__lista__itens {
+    line-height: 1.5;
+}
+
+.beneficios__lista__itens:before {
+    content: "★";
+}
+
+.beneficios__imagem {
+    width: 59%;
+    box-shadow: 10px 10px 5px black ;
+}
+
+.beneficios__video {
+    width: 530px;
+    margin: 3em auto 0 auto;
+}
+
+.rodape {
+    background-image: url("../assets/bg.jpg");
+    text-align: center;
+    padding: 25px 0;
+}
+
+.rodape__copyright {
+    color: white;
+    font-size: 13px;
+}
+
+/* Parte dos produtos */
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 6em 0;
+}
+
+.produtos li {
+    display: inline-block;
+    border: 3px solid black;
+    width: 30%;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 14px;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    border-radius: 12px;
+}
+
+.produtos li:hover {
+    border-color: rgb(167, 164, 10);
+    box-shadow: -7px 7px 10px black;
+}
+
+.produtos li:active {
+    border-color: rgb(2, 165, 2);
+}
+
+.produtos li:hover h2 {
+    font-size: 33px;
+}
+
+.produtos h2 {
+    font-size: 28px;
+}
+
+.produtos__descricao {
+    font-size: 19px;
+}
+
+.produtos__preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0 0;
+    font-family: var(--fonte-secundaria);
+}
+
+/* Parte do agendamento */
+
+.formulario {
+    width: 760px;
+    margin: 40px auto;
+    border: 4px solid black;
+    border-radius: 14px;
+    background: linear-gradient(to left, #ece9e9, #afaeae);
+}
+
+.formulario__container {
+    margin: 20px 20px;
+}
+
+.formulario__legenda {
+    font-family: var(--fonte-secundaria);
+    display: block;
+    font-size: 20px;
+    margin: 0 0 5px;
+    font-weight: bold;
+}
+
+.formulario__input {
+    margin: 0 0 16px;
+    width: 97%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 6px 9px;
+    font-size: 15px;
+}
+
+.formulario fieldset {
+    border-style: none;
+    margin: 0 0 20px;
+}
+
+.legenda-radio {
+    display: block;
+    margin: 8px 0 0;
+    font-family: var(--fonte-secundaria);
+    font-weight: 500;
+}
+
+input[type=radio], input[type=checkbox] {
+    width: 24px;
+    height: 17px;
+    vertical-align: middle;
+}
+
+.formulario__opcao {
+    width: 70px;
+    font-family: var(--fonte-secundaria);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 8px 0 0;
+}
+
+.formulario__enviar {
+    width: 30%;
+    font-family: var(--fonte-secundaria);
+    font-weight: bold;
+    color: white;
+    background-color: #3d3d3d;
+    padding: 10px 0;
+    margin: 16px 0 0;
+    cursor: pointer;
+    transition: 1s transform, 1s background-color;
+}
+
+.formulario__enviar:hover {
+    transform: scale(1.1);
+    background-color: #1f1f1f;
+}
+
+.formulario__enviar:active {
+    color: rgba(115, 249, 117, 0.777);
+}
+.container__tabela {
+    width: 760px;
+    margin: 0 auto 40px auto;
+}
+
+.tabela {
+    border: 2px solid black;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.tabela__cabecalho {
+    background-color: gray;
+    color: white;
+}
+
+.tabela__colunas {
+    padding: 13px 13px;
+    border: 2px solid black;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+}
+
+@media screen and (max-width: 480px) {
+    .cabecalho__caixa, .boasvindas__caixa, .principal__caixa, .mapa__local, .beneficios__caixa, .beneficios__video, .produtos, .formulario, .container__tabela {
+        width: auto;
+    }
+
+    .cabecalho__caixa {
+        padding: 0 7px;
+    }
+
+    .cabecalho__caixa h1 {
+        text-align: center;
+    }
+
+    .cabecalho__navegacao {
+        position: static;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .cabecalho__navegacao__lista li {
+        margin: 0 10px;
+    }
+
+    .boasvindas__caixa {
+        text-align: center;
+    }
+
+    .boasvindas__texto {
+        position: static;
+    }
+
+    .principal, .mapa, .beneficios {
+        padding: 2em 0;
+    }
+
+    .principal__caixa, .mapa__local, .beneficios__caixa {
+        margin: 0 20px;
+    }
+
+    .principal__textos, .beneficios__lista, .beneficios__imagem, .tabela {
+        width: 100%;
+    }
+
+    .principal__utensilios {
+        display: none;
+    }
+
+    .beneficios__imagem {
+        margin: 1em 0 0;
+    }
+
+    .produtos {
+        padding: 0;
+        margin: 3em 20px; 
+    }
+
+    .produtos li {
+        display: block;
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .formulario, .container__tabela {
+        margin: 40px 20px;
+    }
+
+    .formulario__input {
+        box-sizing: border-box;
+    }
+}
