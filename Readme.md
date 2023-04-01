@@ -1,11 +1,9 @@
-## Projeto Barbearia Alura, desenvolvida utilizando apenas HTML e CSS.
+### Projeto Barbearia Alura, desenvolvida utilizando apenas HTML e CSS.
+
+#### - Conceitos fundamentais do HTML e CSS.
+#### - Design responsivo.
 
 <br>
 
-### - Conceitos fundamentais do HTML e CSS.
-### - Design responsivo.
-
-<br>
-
-<video src="https://ik.imagekit.io/smcdfr9wf/Barbearia_Alura/2023-04-01_09-22-38.mp4?updatedAt=1680352826221" controls></video>
+https://user-images.githubusercontent.com/124707764/229290412-857605c4-54e1-42ef-a3b0-fd5f7553eec7.mp4
 
